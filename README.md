@@ -21,9 +21,9 @@ python manage.py test
 '''
 127.0.0.1:8000/admin/
 ''' 
-### I used sqlite3(default of django as relational database )
+#### I used sqlite3(default of django as relational database )
 ## Usage
-for using API's log in and receive an access token
+for using APIs login and receive an access token
 
 ### Geting access token:
 ```bash
@@ -31,8 +31,8 @@ curl  -X post http://127.0.0.1:8000/api/token/ -d username=admin -d password=adm
 
 ```
 Answer is Json with two values refresh and access 
-select the access.(this token will expire after 5 min)
-refresh is used for getting new access token(refresh will expire after 24 hour)
+select access.(this token will expire after 5 mins)
+refresh is used for getting new access token(refresh will expire after 24 hours)
 
 ### Using API's
 
